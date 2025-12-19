@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jesus Tadeu Bressiano | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body-glow"></div>
+    <div class="bg-noise"></div>
+
+    <header class="header">
+      <div class="logo">Transformando ideias em experiências digitais</div>
+      <nav class="nav">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#ferramentas" class="nav-link">Ferramentas</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO / SOBRE -->
+      <section class="hero" id="sobre" data-section>
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="tag">Disponível para novos projetos</p>
+            <h1>
+              Olá, eu sou <span class="accent">Jesus Tadeu Bressiano</span><br />
+              <span class="outline" id="animated-title">Desenvolvedor FullStack</span>
+            </h1>
+            <p class="hero-subtitle">
+              Crio soluções digitais completas, do front-end ao back-end, com foco em performance,
+               usabilidade e experiências interativas.
+            </p>
+            <div class="hero-actions">
+              <a href="#projetos" class="btn primary">Ver projetos</a>
+              <a href="#contato" class="btn ghost">Falar comigo</a>
+            </div>
+            <div class="hero-socials">
+              <span>Redes</span>
+              <div class="social-buttons">
+                <a href="https://instagram.com/seuusuario" target="_blank" class="social-btn">
+                  <span>Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/in/jesus-bressiano-b7512120a/" target="_blank" class="social-btn">
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://wa.me/5516991076826" target="_blank" class="social-btn">
+                  <span>WhatsApp</span>
+                </a>
+                <a href="https://github.com/Taads" target="_blank" class="social-btn">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-profile">
+            <div class="profile-card" data-parallax>
+              <div class="profile-image">
+                <img src="imagens/Perfil.jpg" alt="Foto de perfil" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-name">Jesus Tadeu Bressiano</p>
+                <p class="profile-role">Full Stack • Software & Hardware</p>
+                <div class="profile-tags">
+                  <span>C#</span>
+                  <span>JavaScript</span>
+                  <span>HTML5</span>
+                </div>
+              </div>
+            </div>
+            <div class="floating-badge" data-parallax>
+              <span>+2</span>
+              <p>Experiência em desenvolvimento de software e TI</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section class="section projects" id="projetos" data-section>
+        <div class="section-header with-action">
+          <div>
+            <p class="tag">Selecionados</p>
+            <h2>Projetos em destaque</h2>
+            <p class="section-subtitle">
+              Projetos que demonstram a aplicação de boas práticas em 
+              desenvolvimento de software e interface.
+            </p>
+          </div>
+          <button class="btn ghost" id="surprise-project">Surpreenda-se</button>
+        </div>
+
+        <div class="projects-list" id="projects-grid"></div>
+      </section>
+
+      <!-- EXPERIÊNCIAS / PROCESSO -->
+      <section class="section experience" data-section>
+        <div class="section-header">
+          <p class="tag">Experiência</p>
+          <h2>Como entrego valor</h2>
+          <p class="section-subtitle">
+            Processos bem definidos, comunicação clara e foco em soluções eficientes,
+             do planejamento à entrega final.
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div>
+              <h3>Implementação com boas práticas de desenvolvimento</h3>
+              <p>Criação de soluções full stack, com código organizado, foco em desempenho, 
+                usabilidade e escalabilidade.</p>
+              <span class="chip">Front-end</span>
+              <span class="chip">Back-end</span>
+              <span class="chip">Integrações</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div>
+              <h3>Validação, ajustes e melhoria contínua</h3>
+              <p>Testes funcionais, correções e otimizações para garantir estabilidade 
+                e evolução do sistema.</p>
+              <span class="chip">Testes</span>
+              <span class="chip">Manutenção</span>
+              <span class="chip">Performance</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div>
+              <h3>Análise & Definição da Solução</h3>
+              <p>Compreensão do problema, objetivos do projeto e requisitos técnicos para
+                 definir a solução mais adequada.</p>
+              <span class="chip">Análise</span>
+              <span class="chip">Requisitos</span>
+              <span class="chip">Estratégia</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FERRAMENTAS / ECOSSISTEMA -->
+      <section class="section tools" id="ferramentas" data-section>
+        <div class="section-header">
+          <p class="tag">Ferramentas</p>
+          <h2>Ferramentas que domino</h2>
+          <p class="section-subtitle">
+            Do editor de código às ferramentas de colaboração, este é o conjunto que uso no dia a dia
+            para manter o fluxo de trabalho rápido, organizado e com qualidade.
+          </p>
+        </div>
+
+        <div class="tools-grid">
+          <article class="tool-card">
+            <div class="tool-pill">🔧 Hardware & Manutenção</div>
+            <h3>Montagem, manutenção e suporte de equipamentos.</h3>
+            <p>
+              Experiência prática com computadores, diagnóstico de falhas e configuração de sistemas.</p>
+            <ul>
+              <li>Montagem e substituição de componentes</li>
+              <li>Manutenção preventiva e corretiva</li>
+              <li>Diagnóstico de problemas de hardware</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">Hardware</span>
+              <span class="chip">Manutenção</span>
+              <span class="chip">Suporte</span>
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <div class="tool-pill">🎮 Unity</div>
+            <h3>Desenvolvimento de aplicações interativas.</h3>
+            <p>
+              Criação de projetos em Unity com foco em lógica, interação do usuário e organização 
+              de cenas e scripts.
+            </p>
+            <ul>
+              <li>Programação em C# para jogos e apps</li>
+              <li>Controle de cenas, objetos e interações</li>
+              <li>Estruturação de projetos Unity</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">Unity</span>
+              <span class="chip">C#</span>
+              <span class="chip">Interatividade</span>
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <div class="tool-pill">🖥️ Tecnologia da Informação (TI)</div>
+            <h3>Suporte e organização de ambientes de TI.</h3>
+            <p>
+              Atuação em suporte técnico, configuração de sistemas e apoio à infraestrutura.
+            </p>
+            <ul>
+              <li>Suporte a usuários e sistemas</li>
+              <li>Configuração de softwares e ambientes</li>
+              <li>Organização e manutenção de ambientes</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">TI</span>
+              <span class="chip">Infraestrutura</span>
+              <span class="chip">Sistemas</span>
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <div class="tool-pill">🌐 Desenvolvimento Full Stack</div>
+            <h3>Criação de aplicações web completas.</h3>
+            <p>
+              Desenvolvimento de soluções web utilizando tecnologias modernas no front-end e integração com lógica de aplicação.
+            </p>
+            <ul>
+              <li>Estruturação com HTML e CSS</li>
+              <li>Interatividade com JavaScript</li>
+              <li>Organização de código e boas práticas</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTATO - VERSÃO PREMIUM E CHAMATIVA -->
+      <section class="section contact" id="contato" data-section>
+        <div class="contact-wrapper">
+          <div class="contact-hero">
+            <div class="contact-hero-text">
+              <p class="tag">Conecte-se</p>
+              <h2>Escolha como prefere me contatar</h2>
+              <p class="section-subtitle">
+                Estou pronto para transformar suas ideias em experiências digitais incríveis. 
+                É só escolher o canal que você prefere!
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-social-grid">
+
+            <!-- E-mail -->
+            <div class="social-card email-card">
+              <div class="social-card-icon">
+                <span class="icon-envelope">✉️</span>
+                <div class="icon-glow"></div>
+              </div>
+              <div class="social-card-content">
+                <h3>E-mail</h3>
+                <p>jesustadeubressiano@gmail.com</p>
+              </div>
+              <div class="social-card-cta">
+                <span>Escolha como enviar</span>
+                <div class="cta-arrow">↓</div>
+              </div>
+              <div class="email-options">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=jesustadeubressiano@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="email-option-btn"
+                >
+                  Gmail
+                </a>
+                <a
+                  href="mailto:jesustadeubressiano@gmail.com"
+                  class="email-option-btn secondary"
+                >
+                  Outlook / Outros
+                </a>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5516991076826?text=Olá%20Jesus!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre..." target="_blank" class="social-card whatsapp-card">
+              <div class="social-card-icon">
+                <span class="icon-whatsapp">📱</span>
+                <div class="icon-glow"></div>
+              </div>
+              <div class="social-card-content">
+                <h3>WhatsApp</h3>
+                <p>Resposta rápida e direta</p>
+              </div>
+              <div class="social-card-cta">
+                <span>Iniciar conversa</span>
+                <div class="cta-arrow">→</div>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/jesus-bressiano-b7512120a/" target="_blank" class="social-card linkedin-card">
+              <div class="social-card-icon">
+                <span class="icon-linkedin">💼</span>
+                <div class="icon-glow"></div>
+              </div>
+              <div class="social-card-content">
+                <h3>LinkedIn</h3>
+                <p>Perfil profissional completo</p>
+              </div>
+              <div class="social-card-cta">
+                <span>Conectar no LinkedIn</span>
+                <div class="cta-arrow">→</div>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/Taads" target="_blank" class="social-card github-card">
+              <div class="social-card-icon">
+                <span class="icon-github">⚡</span>
+                <div class="icon-glow"></div>
+              </div>
+              <div class="social-card-content">
+                <h3>GitHub</h3>
+                <p>Explore meus projetos</p>
+              </div>
+              <div class="social-card-cta">
+                <span>Ver repositórios</span>
+                <div class="cta-arrow">→</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Decoração animada -->
+          <div class="contact-decoration">
+            <div class="decoration-orbit">
+              <span class="orbit-dot"></span>
+              <span class="orbit-dot"></span>
+              <span class="orbit-dot"></span>
+              <span class="orbit-dot"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="project-focus" id="project-focus" aria-hidden="true">
+      <div class="focus-backdrop"></div>
+      <div class="focus-card">
+        <button class="focus-close" aria-label="Fechar destaque">×</button>
+        <div class="focus-media">
+          <img src="" alt="" id="focus-image" />
+        </div>
+        <div class="focus-content">
+          <p class="tag small" id="focus-type"></p>
+          <h3 id="focus-title"></h3>
+          <p id="focus-description"></p>
+          <div class="chip-row" id="focus-tags"></div>
+          <div class="project-links focus-links">
+            <a href="#" target="_blank" rel="noreferrer" id="focus-live">Ver projeto</a>
+            <a href="#" target="_blank" rel="noreferrer" id="focus-repo">Código no GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Jesus Tadeu Bressiano</h3>
+          <p>Desenvolvedor Full Stack especializado em criar soluções digitais completas, do front-end ao back-end.</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/jesus-bressiano-b7512120a/" target="_blank" rel="noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://github.com/Taads" target="_blank" rel="noreferrer" class="footer-social-link" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://wa.me/5516991076826" target="_blank" rel="noreferrer" class="footer-social-link" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com/seuusuario" target="_blank" rel="noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Navegação</h4>
+          <nav class="footer-nav">
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#ferramentas">Ferramentas</a>
+            <a href="#contato">Contato</a>
+          </nav>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <div class="footer-contact">
+            <a href="mailto:jesustadeubressiano@gmail.com">jesustadeubressiano@gmail.com</a>
+            <a href="https://wa.me/5516991076826">+55 (16) 99107-6826</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <div class="footer-copyright">
+          <p>© <span id="year"></span> Jesus Tadeu Bressiano. Todos os direitos reservados.</p>
+          <p class="footer-made">Feito com <span class="heart">❤️</span> e muito código</p>
+        </div>
+      </div>
+
+      <div class="footer-decoration">
+        <div class="footer-glow"></div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
