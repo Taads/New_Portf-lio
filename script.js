@@ -109,9 +109,11 @@ function renderProjects() {
   initTilt();
 }
 
-// Efeito parallax suave
+// Efeito parallax suave (reduzido em mobile)
 const parallaxEls = document.querySelectorAll("[data-parallax]");
+const isMobile = window.innerWidth <= 720;
 window.addEventListener("scroll", () => {
+  if (isMobile) return; // Desabilita parallax em mobile para melhor performance
   const scrollY = window.scrollY || window.pageYOffset;
   const viewportHeight = window.innerHeight;
   parallaxEls.forEach((el) => {
@@ -123,9 +125,11 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Tilt nos cards de projeto
+// Tilt nos cards de projeto (reduzido em mobile)
 let tiltCards = [];
+const isMobileDevice = window.innerWidth <= 720;
 function handleTilt() {
+  if (isMobileDevice) return; // Desabilita tilt em mobile
   const scrollY = window.scrollY || window.pageYOffset;
   tiltCards.forEach((card, index) => {
     const speed = 0.05 + index * 0.02;
@@ -135,9 +139,11 @@ function handleTilt() {
 }
 function initTilt() {
   tiltCards = Array.from(document.querySelectorAll("[data-scroll-tilt]"));
-  handleTilt();
+  if (!isMobileDevice) handleTilt();
 }
-window.addEventListener("scroll", handleTilt);
+if (!isMobileDevice) {
+  window.addEventListener("scroll", handleTilt);
+}
 
 // Modal de projeto
 function openProjectFocus(project, card) {
